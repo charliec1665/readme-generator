@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/charliec1665/readme-generator/issues"
   },
-  "homepage": "https://github.com/charliec1665/readme-generator#readme"
+  "homepage": "https://github.com/charliec1665/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
