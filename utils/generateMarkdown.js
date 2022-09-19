@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// function that returns a license badge based on which license is passed in
+// if there is no license, return an empty string
 const renderLicenseBadge = licenseBadge => {
   if (!licenseBadge) {
     return '';
@@ -12,8 +12,8 @@ const renderLicenseBadge = licenseBadge => {
   `;
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// function that returns the license link
+// if there is no license, return an empty string
 const renderLicenseLink = licenseLink => {
   if (!licenseLink) {
     return '';
@@ -24,8 +24,8 @@ const renderLicenseLink = licenseLink => {
   `;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// function that returns the license section of README
+// if there is no license, return an empty string
 const renderLicenseSection = licenseText => {
   if (!licenseText) {
     return '';
@@ -36,7 +36,7 @@ const renderLicenseSection = licenseText => {
   `;
 };
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 const generateMarkdown = markdownTemplate => {
   return `
   # ${markdownTemplate.title}
@@ -83,6 +83,7 @@ const generateMarkdown = markdownTemplate => {
 `;
 }
 
+// exports the markdown in the order desired
 module.exports = markdownData => {
 
   return `
