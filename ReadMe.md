@@ -1,25 +1,54 @@
 
-  # ReadMe Generator
+ 
+  # readme gen
 
   ## Description
   
-  A node.js generator which allows user to answer questions from the command line and generate a markdown readme file
+  k
 
   ## Table of Contents
 
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+
   ## Installation
 
-  install like dis 1. bloop 2. blorp 3.bleep
+  k
 
   ## Usage
 
-  okay lissen reel well, you do dis forst, den dis, den dis
+  k
 
   ## Credits
 
-  Charlie Carter, Pepper Snapper Carter
+  Made with love by k.
 
+  ## Contributing
+
+  k
+
+  ## Tests
+
+  k
+
+  ## Questions
+
+  Contact k if you have any questions.
+
+  https://github.com/k
+
+  k
+
+
+ 
   ## License
-
   
-
+ 
+  ![License: ](https://img.shields.io/badge/License-$%7BlicenseBadge.license%7D-brightgreen)
+  
+ 
+  Read more about this license [here](https://choosealicense.com/licenses/licenseLink.license/).
+  
+  

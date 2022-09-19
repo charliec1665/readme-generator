@@ -2,44 +2,93 @@ const fs = require('fs');
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+const renderLicenseBadge = licenseBadge => {
+  if (!licenseBadge) {
+    return '';
+  }
+
+  return `
+  ![License: ](https://img.shields.io/badge/License-$%7BlicenseBadge.license%7D-brightgreen)
+  `;
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+const renderLicenseLink = licenseLink => {
+  if (!licenseLink) {
+    return '';
+  }
+
+  return `
+  Read more about this license [here](https://choosealicense.com/licenses/licenseLink.license/).
+  `;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const renderLicenseSection = licenseText => {
+  if (!licenseText) {
+    return '';
+  }
+
+  return `
+  ## License
+  `;
+};
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = markdownTemplate => {
   return `
-  # ${data.title}
+  # ${markdownTemplate.title}
 
   ## Description
   
-  ${data.description}
+  ${markdownTemplate.description}
 
   ## Table of Contents
 
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+
   ## Installation
 
-  ${data.installation}
+  ${markdownTemplate.installation}
 
   ## Usage
 
-  ${data.usage}
+  ${markdownTemplate.usage}
 
   ## Credits
 
-  ${data.credits}
+  Made with love by ${markdownTemplate.credits}.
 
-  ## License
+  ## Contributing
 
-  ${data.license}
+  ${markdownTemplate.contributing}
+
+  ## Tests
+
+  ${markdownTemplate.tests}
+
+  ## Questions
+
+  Contact ${markdownTemplate.credits} if you have any questions.
+
+  https://github.com/${markdownTemplate.creditlinks}
+
+  ${markdownTemplate.email}
 
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = markdownData => {
+
+  return `
+ ${generateMarkdown(markdownData)}
+ ${renderLicenseSection(markdownData)}
+ ${renderLicenseBadge(markdownData)}
+ ${renderLicenseLink(markdownData)}
+  `;
+};
